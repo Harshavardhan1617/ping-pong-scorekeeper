@@ -10,3 +10,14 @@ body {
     width: 30vw;
     margin-top: 12vh;
 }
+
+.intro {
+    border: solid 2px grey;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#scboard h2 {
+    font-size: 38px;
+    font-weight: 700;
+}

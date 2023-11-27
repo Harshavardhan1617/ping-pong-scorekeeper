@@ -54,8 +54,8 @@ reset.addEventListener('click', function(){
     personTwo = 0
     scoreOne.innerText = `${personOne}`
     scoreTwo.innerText = `${personTwo}`
-    scoreOne.style.color = "rgb(0 0 0)"
-    scoreTwo.style.color = "rgb(0 0 0)"
+    scoreOne.style.color = "#4a4a4a"
+    scoreTwo.style.color = "#4a4a4a"
     maxRounds.value = ""
     
 })
