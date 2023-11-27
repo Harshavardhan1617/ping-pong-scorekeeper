@@ -15,9 +15,37 @@ body {
     border: solid 2px grey;
     border-radius: 5px;
     padding: 3px;
+    font-weight: 700;
+    color: black;
+    font-size: medium;
 }
+
 
 #scboard h2 {
     font-size: 38px;
     font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    gap: 3px;
+    padding-top: 12px;
+
+}
+.buttons button {
+    flex: 1 1 0;
+}
+
+#inlinescore {
+    padding-top: 12px;
+    font-size: large;
+    font-weight: 700;
+    color: black;
+}
+
+#rounds {
+    width: 60px;
+    border-radius: 12px;
+    text-align: center;
+    border: solid 2px;
 }

@@ -7,6 +7,7 @@ const scoreNum = document.querySelector('#scorenum')
 const maxRounds = document.querySelector('#rounds')
 const scoreOne = document.querySelector('#persononescore')
 const scoreTwo = document.querySelector('#persontwoscore')
+const buttons = document.querySelectorAll('button')
 
 
 
@@ -41,9 +42,11 @@ function colorizer() {
     if ((personOne+personTwo == parseInt(maxRounds.value)) && personOne > personTwo){
         scoreOne.style.color = "green"
         scoreTwo.style.color = "red"
+        disableButtons()
     } else if ((personOne+personTwo == parseInt(maxRounds.value)) && personOne < personTwo) {
         scoreOne.style.color = "red"
         scoreTwo.style.color = "green"
+        disableButtons()
     }
 }
 
@@ -57,5 +60,16 @@ reset.addEventListener('click', function(){
     scoreOne.style.color = "#4a4a4a"
     scoreTwo.style.color = "#4a4a4a"
     maxRounds.value = ""
+    enableButtons()
     
 })
+
+const disableButtons = () => {
+    buttons[0].disabled = true
+    buttons[1].disabled = true
+}
+
+const enableButtons = () => {
+    buttons[0].disabled = false
+    buttons[1].disabled = false
+}
